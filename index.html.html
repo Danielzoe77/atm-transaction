@@ -3,8 +3,8 @@
    let code = "*894#";
    let balance = 10000;
    let letters = "abcdef";
-   let stage1 = 1;
-   let stage2 = 2;
+   let stage1 = "1"
+   let stage2 = "2"
    let firstBank = (prompt(" you are welcome to first Bank kindly dial *894#"));
    //  let ussdCode = Number(prompt("*894#"));
    if(firstBank ===code){
@@ -30,17 +30,19 @@
     3>Airtime (others)
     4>Data
     5>Next page`)}
-    if(ussdt == stage1){
+    if(stage1== 1){
+       let stage2=
         prompt(`
      1>To others
      2>Between my firstbank Accounts`)
-     }if(stage1 == 1){
+     }if(stage2 == 1){
        let enterAmount =
          (prompt(`
          Enter amount`));
       if (enterAmount == letters){
          alert("this is not a number")}
       else if(enterAmount <= balance ){
+         let enteAmount =
          (prompt(`
          Transfer Successful
          1. Make another Transfer     2. Cancel `));
@@ -50,54 +52,8 @@
          alert("Insufficient Amount")
       }
       }
-      // if(ussdt == stage2){
-      //    let select =(prompt(`
-      //    you dont have another first bank account`));
-      // }
-      
-
- 
-
-   
-   //  let ussdt= prompt(`
-   //  First Bank
-   //  1>Quick Banking
-   //  2>open an account
-   //  3>Loans
-   //  4>FirstMonie
-   //  5>Payattitude`)
-   //  if(ussdt == 1){
-   //     prompt(`
-   //  1>Transfer Money
-   //  2>Airtime (self)
-   //  3>Airtime (others)
-   //  4>Data
-   //  5>Next page`)}
-   //   if(ussdt == 1){
-   //     prompt(`
-   //  1>To others
-   //  2>Betwwen my firstbank Accounts`)
-   //  }
-   //  if(ussdt == 1){
-   //     +(prompt(`
-   //  Enter amount`))}
-   //  if(ussdt == 1){
-   //      +(prompt(`
-   //  Enter Account number`))
-   //  }
-   //  if(ussdt == 1){
-   //     prompt(`
-   //     Select recipient bank
-   //  1>First Bank
-   //  2>Ecobank Mobile
-   //  3>UBA
-   //  4>Access Bank
-   //  5>Search Bank`)}
-   //  if(ussdt == 1){
-   //     +(prompt(`
-   //  Transfer of N1000 to 
-   //  OMOANON DANIEL EHIKIOYA 123451222 
-   //  at N10 charge 
-   //  please enter your 5 digit PIN:`))}
+      else if (stage2 == 2){
+         alert("you dont have another first Bank Account")
+      }
     
   </script>
